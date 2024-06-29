@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
+    <link href="./styles/output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div
+        class="container flex flex-col items-center py-2 gap-3 border-b-[1px] border-light md:flex-row">
+        <div class="flex justify-between w-full lg:gap-10 lg:justify-normal">
+          <div class="flex gap-[10px]">
+            <img
+              class="w-[19px] h-[19px]"
+              src="/public/icons/email.svg"
+              alt="" />
+            <div class="text-sm">enquiries@info.com</div>
+          </div>
+          <div class="flex gap-[10px]">
+            <img
+              class="w-[19px] h-[19px]"
+              src="/public/icons/phone.svg"
+              alt="" />
+            <div class="text-sm">1-800-555-1234</div>
+          </div>
+        </div>
+        <div class="flex w-full justify-between md:justify-end md:gap-10">
+          <img src="/public/icons/fb.svg" alt="" />
+          <img src="/public/icons/twitter.svg" alt="" />
+          <img src="/public/icons/printest.svg" alt="" />
+          <img src="/public/icons/insta.svg" alt="" />
+        </div>
+      </div>
+      <div class="container flex justify-between w-full py-[10px] items-center">
+        <img src="../public/icons/LogoHere.svg" alt="" />
+        <div
+          class="flex flex-col w-4/5 h-lvh shadow-lg fixed z-20 top-0 right-0 bg-white translate-x-[100%] md:shadow-none md:bg-transparent md:static md:w-fit md:h-fit md:gap-[30px] md:flex-row py-[70px] md:translate-x-[0] ease-linear duration-300 menu-active-open md:py-6">
+          <div
+            class="text-primary md:hidden mx-5 cursor-pointer text-xl menu-active-close w-1">
+            &#10005;
+          </div>
+          <div
+            class="px-5 py-6 text-base hover:text-primary hover:bg-light ease-linear duration-300 cursor-pointer md:p-0 md:hover:bg-transparent">
+            Home
+          </div>
+          <div
+            class="px-5 py-6 text-base hover:text-primary hover:bg-light ease-linear duration-300 cursor-pointer md:p-0 md:hover:bg-transparent">
+            Services
+          </div>
+          <div
+            class="px-5 py-6 text-base hover:text-primary hover:bg-light ease-linear duration-300 cursor-pointer md:p-0 md:hover:bg-transparent">
+            Pricing
+          </div>
+          <div
+            class="flex-shrink-0 px-5 py-6 text-base hover:text-primary hover:bg-light ease-linear duration-300 cursor-pointer md:p-0 md:hover:bg-transparent">
+            Submit Ordr
+          </div>
+        </div>
+
+        <div
+          class="hidden md:flex px-[19px] py-[10px] bg-primary rounded-[5px] cursor-pointer">
+          <div class="text-base text-white">Try For Free</div>
+        </div>
+        <div
+          class="gap-[3px] flex flex-col cursor-pointer md:hidden hamburger-menu">
+          <div class="w-6 bg-black h-1 rounded-[10px]"></div>
+          <div class="w-6 bg-black h-1 rounded-[10px]"></div>
+          <div class="w-6 bg-black h-1 rounded-[10px]"></div>
+        </div>
+      </div>
+      <div
+        class="hidden md:hidden coating w-full h-[100vh] bg-black absolute top-0 z-[-1] opacity-25"></div>
+    </header>
+    <!-- <section class="container h-[650px] p-0 flex justify-end relative">
+      <img
+        src="/public/images/hero-blur.png"
+        class="w-full h-full object-cover absolute left-0 top-0"
+        alt="" />
+      <img src="/public/images/hero.png" class="h-full object-cover" alt="" />
+    </section> -->
+    <script type="module" src="modules/index.js"></script>
+  </body>
+</html>
