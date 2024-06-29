@@ -9,20 +9,17 @@ class Menu {
 
   menuActive() {
     this.hamburgerMenu.addEventListener("click", () => {
-      this.menuActiveOpen.classList.add("translate-x-[0]");
-
-      console.log("_______", this.menuActiveOpen);
-
+      this.menuActiveOpen.classList.remove("translate-x-[100%]");
       this.coating.classList.remove("hidden");
     });
 
     this.menuActiveClose.addEventListener("click", () => {
-      this.menuActiveOpen.classList.remove("translate-x-[0]");
+      this.menuActiveOpen.classList.add("translate-x-[100%]");
       this.coating.classList.add("hidden");
     });
 
     this.coating.addEventListener("click", () => {
-      this.menuActiveOpen.classList.remove("translate-x-[0]");
+      this.menuActiveOpen.classList.add("translate-x-[100%]");
       this.coating.classList.add("hidden");
     });
   }
